@@ -1,0 +1,448 @@
+/* FONT DI PROVA */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@300&display=swap');
+
+.h1, .btn_landing{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav_font{
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+} 
+
+:root{
+  --c-accent: #04ca95;
+  --c-main: #fffefe;
+  --c-dark: #151515;
+  --c-gray: #f1f0f0;
+}
+
+.text_accent{
+  color: var(--c-accent);
+}
+
+.text_main{
+  color: var(--c-main);
+}
+
+.text_dark{
+  color: var(--c-dark);
+}
+
+.bg_accent{
+  background-color: var(--c-accent);
+}
+
+.bg_main{
+  background-color: var(--c-main);
+}
+
+.bg_dark{
+  background-color: var(--c-dark);
+}
+
+.bg_gray{
+  background-color: var(--c-gray);
+}
+
+
+.searchbar_custom{
+  all: unset;
+  border-bottom: 1px solid black;
+}
+
+.landing_page{
+  height: 75vh;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.35) 65%, rgba(0,0,0,0) 100%), url(../../public/media/1.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.text_shadow{
+  text-shadow: 1px 1px 1px black;
+}
+
+.navborder{
+  border-bottom: 2px solid var(--c-accent);
+}
+
+
+.btn_landing{
+  border: 2px solid var(--c-accent);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--c-main);
+  position: relative;
+}
+
+.btn_landing::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 5px;
+  left: 5px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+
+.btn_landing:hover{
+  background-color: var(--c-accent);
+  color: var(--c-dark);
+  transition: 0.6s;
+  scale: 110%;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.hover_accent:hover{
+  color: var(--c-accent)!important;
+}
+
+.hover_accentBG:hover{
+  background-color: var(--c-accent)!important;
+}
+
+.hover_none:hover{
+  color: unset;
+}
+
+.newUpdates_arrow{
+  border-bottom: 2px ridge var(--c-accent);
+}
+
+.category_card{
+  width: 100px;
+}
+
+
+/* ----------------------------------------------------------------- NAVBAR */
+
+.searchbar{
+    background-color: var(--c-secondary);
+    color: var(--c-secondary);
+    width: 300px;
+}
+
+/* BOTTONI */
+.btn_1{
+  color: var(--c-accent );
+  background-color:var(--c-secondary);
+}
+
+/* CAROSELLO */
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ 
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+/* //swiper last updates */
+.mySwiper3 {
+  width: 100%;
+  height: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 220px;
+  height: 220px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+  
+
+.card_update{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.4s ease-out;
+}
+
+
+
+.card_update_info{
+  position: absolute;
+  border-radius: rounded;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.card_update_info:hover{
+  background-color: rgba(241, 240, 240, 0.7);
+  opacity: 1;
+  border-radius: 5px;
+
+}
+
+
+.dropdown-item:hover{
+  background-color: var(--c-accent);
+}
+
+.index_card{
+  position: relative;
+  background-color: var(--c-main);
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.index_card:hover::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--c-accent);
+  z-index: -1;
+  top: 4px;
+  left: 4px;
+  border-radius: 5px;
+}
+
+.index_image{
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  position: center;
+  object-fit: cover;
+}
+
+.wp_login{
+  background-image: url(../../public/media/2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.wp_createArticle{
+  background-image: url(../../public/media/3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.wp_createEdit{
+  background-image: url(../../public/media/4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.glass_effect{
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+
+/* sezione profilo */
+
+.user-img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+cursor: pointer;
+border: 5px solid #00EFAF;
+}
+
+
+
+.prod-pic {
+width: 80px;
+height: 100px;
+cursor: pointer;
+}
+
+.prod-bg {
+width: 90px;
+height: 100px;
+background-color: #5ee4ac;
+}
+
+.wp_profile{
+  /* //so che fa schifo,si stretcha e nel responsive diventa cacca blu,ma era solo una prova  */
+  background-image: url(../../public/media/test-profilewp.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.wp_index{
+  /* //so che fa schifo,si stretcha e nel responsive diventa cacca blu,ma era solo una prova  */
+  background-image: url(../../public/media/);
+  background-position: center;
+  background-size: cover;
+}
+
+/* navbar logo test */
+.nav_logo{
+  width: 100px;
+  height:50px;
+  background-image: url(../../public/media/logotest5-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+.auto-type{
+  font-size: 40px;
+}
+.more {
+  width: 100px;
+  height: 110px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.card-text{
+  word-break: break-word;
+}
+
+.word_break{
+  word-break: break-word;
+}
+
+.img_preview{
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel_custom{
+  height: 350px;
+}
+
+.font_revisor_card{
+  font-size: 12px;
+}
+
+#revisorCarousel{
+  width: 100%;
+  /* height: 75%; */
+
+}
+
+.carousel_img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.linea_verde{
+  border-bottom: 1px solid var(--c-accent);
+}
+
+.img_card_index{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bg-white{
+  background-color: white!important;
+}
+
+.border_accent{
+  border: 3px solid var(--c-accent);
+}
+
+.move_X{
+  position: relative;
+  left: -10px;
+}
+
+.move_X {
+  position: relative;
+  left: 0;
+  animation: moveRightLeft 2.5s linear infinite;
+}
+
+@keyframes moveRightLeft {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 20px;
+  }
+  100% {
+    left: 0;
+  }
+}
